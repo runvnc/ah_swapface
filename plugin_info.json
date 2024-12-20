@@ -1,0 +1,7 @@
+{
+  "name": "SwapFace",
+  "version": "1.0.0",
+  "description": "Face swapping functionality using insightface",
+  "services": ["swap_face"],
+  "commands": []
+}
