@@ -4,10 +4,10 @@ version = "1.0.3"
 description = "Face swapping plugin using insightface"
 dependencies = [
     "onnxruntime",
-    "torch",
+    "torch==0.4.1",
     "opencv-python",
     "pillow",
-    "numpy==1.26.3",
+    "numpy==1.26.3"
     "nanoid",
     "scipy",
     "scikit-learn"

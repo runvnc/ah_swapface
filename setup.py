@@ -8,7 +8,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "onnxruntime",
-        "torch",
+        "torch==0.4.1",
         "opencv-python",
         "pillow", 
         "numpy==1.26.3",
