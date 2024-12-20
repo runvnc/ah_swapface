@@ -7,7 +7,7 @@ dependencies = [
     "torch==0.4.1",
     "opencv-python",
     "pillow",
-    "numpy==1.26.3"
+    "numpy==1.26.3",
     "nanoid",
     "scipy",
     "scikit-learn"
