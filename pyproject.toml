@@ -1,6 +1,6 @@
 [project]
 name = "ah_swapface"
-version = "1.0.2"
+version = "1.0.3"
 description = "Face swapping plugin using insightface"
 dependencies = [
     "onnxruntime",
@@ -8,7 +8,8 @@ dependencies = [
     "opencv-python",
     "pillow",
     "numpy~=2.0.0",
-    "nanoid"
+    "nanoid",
+    "scipy"
 ]
 
 [build-system]
