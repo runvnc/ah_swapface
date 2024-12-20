@@ -3,7 +3,6 @@ name = "ah_swapface"
 version = "1.0.1"
 description = "Face swapping plugin using insightface"
 dependencies = [
-    "insightface",
     "onnxruntime",
     "torch",
     "opencv-python",
