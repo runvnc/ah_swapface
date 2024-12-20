@@ -13,7 +13,8 @@ setup(
         "pillow", 
         "numpy~=2.0.0",
         "nanoid",
-        "scipy"
+        "scipy",
+        "scikit-learn"
     ],
     dependency_links=[
         "git+https://github.com/deepinsight/insightface.git#egg=insightface&subdirectory=python-package"
