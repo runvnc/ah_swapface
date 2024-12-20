@@ -1,3 +1,2 @@
-from .mod import swap_face
+from .mod import *
 
-__all__ = ['swap_face']
