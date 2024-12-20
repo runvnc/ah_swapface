@@ -11,7 +11,7 @@ setup(
         "torch",
         "opencv-python",
         "pillow", 
-        "numpy",
+        "numpy~=2.0.0",
         "nanoid"
     ],
     dependency_links=[
