@@ -11,7 +11,7 @@ setup(
         "torch",
         "opencv-python",
         "pillow", 
-        "numpy~=2.0.0",
+        "numpy==1.26.3",
         "nanoid",
         "scipy",
         "scikit-learn"
