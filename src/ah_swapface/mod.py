@@ -107,7 +107,7 @@ class FaceSwap:
             print("No face swap model provided")
         return result_image
 
-def __init__():
+def setup():
     global swapper
     print("initializing face swap")
     swapper = FaceSwap()
@@ -153,4 +153,4 @@ async def swap_face(input_ref_dir, target_image_path, context=None, skip_nsfw=Fa
         fname = f'<img src="{fname}" style="max-width: 100%; height: auto;" />'
     return fname
 
-__init__()
+setup()
