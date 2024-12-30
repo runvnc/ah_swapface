@@ -13,6 +13,7 @@ from PIL import Image
 from .utils import pil2tensor, tensor2pil
 from .download import download_and_extract
 from lib.providers.services import service
+import traceback
 
 swapper = None
 
@@ -148,9 +149,15 @@ async def swap_face(input_ref_dir, target_image_path, context=None, skip_nsfw=Fa
     Returns:
         str: Path to resulting image, or HTML img tag if wrap_html=True
     """
-    fname = await do_swap_face(input_ref_dir, target_image_path)
-    if wrap_html and fname:
-        fname = f'<img src="{fname}" style="max-width: 100%; height: auto;" />'
+    try:
+      fname = await do_swap_face(input_ref_dir, target_image_path)
+      if wrap_html and fname:
+          fname = f'<img src="{fname}" style="max-width: 100%; height: auto;" />'
+    except Exception as e:
+        trace = sys.exc_info()[2]
+        print("Error in swap_face:", e)
+        print(trace)
+        fname = None
     return fname
 
 setup()
